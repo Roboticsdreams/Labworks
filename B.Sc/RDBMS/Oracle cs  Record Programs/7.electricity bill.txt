@@ -1,0 +1,42 @@
+write an queries for to calculate  the electricitybill
+
+create table eb(custid number(4),name varchar2(10),address varchar2(10));
+insert into eb values(&cid,'&name','&address');
+declare
+num number(5);
+unit number(5);
+ant number(5);
+year number(5);
+name varchar2(10);
+address varchar2(10);
+bno number(5);
+l number(5);
+begin
+bno:=1
+select count(*) into l from eb;
+bno:=l+1;
+num:=&num;
+unit:=&unit;
+name:='&name';
+mon:='&mon';
+select count(*) into s from eb;
+if s=1 then;
+dbms_output.put_line('Bill already paid');
+else
+if(unit<=500) then amt:=(0.5* unit);
+amt:=((0.50*500)+(unit-500)*1.5);
+else 
+if(unit>1000)and(unit<=1500)then 
+amt:=(500*0.50)+(1.5*500)+(unit-100)*2;
+endif;
+endif;
+endif;
+endif;
+dbms_output.put_line('Electricity Bill');
+dbms_output.put_line('Bill no:'||bno);
+dbms_output.put_line('Id:'||id);
+dbms_output.put_line('Name:'||name);
+dbms_output.put_line('Unit:'||unit);
+dbms_output.put_line('Amount:'||amt);
+endif;
+end;

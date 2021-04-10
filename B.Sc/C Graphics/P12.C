@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<graphics.h>
+#include<stdlib.h>
+main()
+{
+int gd=DETECT,gm;
+int midx,midy,i;
+initgraph(&gd,&gm,"");
+setcolor(WHITE);
+midx=getmaxx()/2;
+midy=getmaxy()/2;
+for(i=1;i<=360;i+=20)
+{
+circle(midx+i,midy,10);
+line(midx+i,midy+10,midx+i,midy+45);
+line(midx+i,midy+20,midx-20+i,midy+30);
+line(midx+i,midy+20,midx+20+i,midy+30);
+line(midx+i,midy+40,midx-20+i,midy+70);
+getch();
+cleardevice();
+circle(midx+10+i,midy,10);
+line(midx+10+i,midy+10,midx+10+i,midy+70);
+line(midx+10+i,midy+20,midx+20+i,midy+30);
+line(midx+10+i,midy+40,midx+25+i,midy+70);
+getch();
+cleardevice();
+}
+closegraph();
+}
+

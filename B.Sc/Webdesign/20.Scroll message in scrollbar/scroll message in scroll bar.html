@@ -1,0 +1,52 @@
+<html>
+<head>Scrollbar
+</head>
+<body>
+<SCRIPT>
+
+  message = "Welcome to Anna University^" +
+  			"Welcome to Anna University^" +
+  			"World Largest Technical & Technology University^" +
+			"World Technology Premium University^" +
+  	        "Website Maintained By Ramanujan Computing Centre^" +
+			"Any related details please contact:- webadmin@annauniv.edu^" 
+            
+
+  scrollSpeed = 45
+
+  lineDelay   = 1500
+
+  txt         = ""
+
+  function scrollText(pos) {
+
+    if (message.charAt(pos) != '^') {
+
+     txt    = txt + message.charAt(pos)
+
+     status = txt
+
+     pauze  = scrollSpeed
+
+    }
+
+    else {
+
+      pauze = lineDelay
+
+      txt   = ""
+
+      if (pos == message.length-1) pos = -1
+
+    }
+
+    pos++
+
+    setTimeout("scrollText('"+pos+"')",pauze)
+
+  }
+
+scrollText(0)
+
+  </SCRIPT>
+</BODY></HTML>

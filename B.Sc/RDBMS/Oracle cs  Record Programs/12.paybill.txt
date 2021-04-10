@@ -1,0 +1,57 @@
+write an queries to print a paybill 
+
+declare
+cursor c is select * from emp;
+rec emp % rowtype;
+basic number(10);
+da number(10);
+hra number(10);
+ma number(10);
+lic number(10);
+loan number(10);
+gp number(10);
+np number(10);
+begin
+open c;
+loop
+fetch cin to rec;
+exit when c % not found;
+gp:=rec.basic+da+hra+ma;
+
+if(rec.basic<5000)then
+da:=rec.basic*(30/100);
+hra:=200;
+ma:=100;
+lic:=300;
+pf:=rec.basic*(30/100);
+loan:=500;
+
+hra:=300;
+ma:=200;
+lic:=400;
+pf:=rec.basic*(40/100);
+loan:=600;
+
+else
+da:=rec.basic*(50/100);
+hra:=400;
+ma:=300;
+lic:=500;
+pf:=rec.basic*(50/100);
+loan:=700;
+
+endif;
+endif;
+gp:=rec.basic+da+hra+ma;
+td:=pf+lic+loan;
+np:=gp-td;
+dbms_output.put_line('Employee Paybill');
+dbms_output.put_line('Name:'||rec.name||'No:'||rec.no);
+dbms_output.put_line('Designation'||des);
+dbms_output.put_line('claming deducation:');
+dbms_output.put_line('Basic:'||rec.basic);
+dbms_output.put_line('PF:'||rec.pf);
+dbms_output.put_line('Grosspay:'||gp||'Netpay:'||np);
+endloop;
+close c;
+end;

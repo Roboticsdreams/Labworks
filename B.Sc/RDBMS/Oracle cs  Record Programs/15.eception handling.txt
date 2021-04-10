@@ -1,0 +1,19 @@
+write an queries to create a table and alter ,insert, update a table
+
+create table excep(rno number(10),name varchar2(10),courses varchar2(10));
+insert into excep values(&rno,'&name','&courses');
+declare
+roll excep.rno % type;
+s_name excep.name % type;
+s_courses excep % type;
+begin
+roll:=&roll;
+select name,courses into sname,scourse from excep where roll=excep_rno;
+dbms_output.put_line('Roll no:'||roll);
+dbms_output.put_line('Name:'||name);
+dbms_output.put_line('Courses:'||courses);
+dbms_output.put_line('Job:||job);
+Exception
+when  no_data_found then
+dbms_outpur.put_line(rno||'is not found');
+end;

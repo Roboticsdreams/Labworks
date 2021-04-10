@@ -1,0 +1,55 @@
+journalise the following transactions
+
+f1->company information ->create company->select->company
+gateway of tally->accounts information ->ledger a/c->create
+
+Acount information  		Groups
+captial a/c			captial a/c
+bank a/c			bank a/c
+building a/c		fixed assets
+purchase a/c		purchase a/c
+sales a/c			sales a/c
+electricity charges a/c		expenses(indirect)
+salary a/c			expenses(indirect)
+
+gateway of tally->voucher entry 
+voucher type:receipt
+
+key:f6
+cash a/c dr 200000
+To captial a/c 200000
+voucher type:contra
+
+key:f4
+bank a/c dr 50000
+To cash a/c 50000
+voucher type:payment
+
+key:f5
+building a/c dr 70000
+To cash a/c 70000
+voucher type:payment
+
+key:f5
+purchase a/c dr 50000
+To cash a/c 50000
+voucher type:receipt
+
+key:f6
+cash a/c dr 60000
+To bank a/c 60000
+voucher type:contra
+
+key:f4
+cash a/c dr 10000
+To cash a/c 10000
+voucher type:payment
+
+key:f5
+electric charges a/c dr 300
+To cash a/c 300
+voucher type:payment
+
+key:f5
+salary a/c dr 1500
+To cash a/c 1500

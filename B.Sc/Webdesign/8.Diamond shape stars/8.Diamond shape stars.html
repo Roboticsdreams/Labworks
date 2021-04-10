@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Diamond shapes stars</title>
+<Script Language="VBScript">
+dim i,j,k,n
+n=Inputbox("Enter the number of stars:")
+for i=1 to n
+for j=1 to n-i
+document.write("&nbsp;")
+next
+for k=1 to i
+if k=1 or  k=i then
+document.write("&nbsp;*")
+else
+document.write ("&nbsp;&nbsp;")
+end if
+next
+document.write("<br>")
+next
+document.write("&nbsp;")
+for i=n-1 to 1 step-1
+for j=1 to n-i
+document.write("&nbsp;")
+next
+for k=1 to i
+if k=1 or  k=i then
+document.write("&nbsp;*")
+else
+document.write ("&nbsp;&nbsp;")
+end if
+next
+document.write("<br>")
+next
+</Script>
+</head>
+<body>
+</body>
+</html>

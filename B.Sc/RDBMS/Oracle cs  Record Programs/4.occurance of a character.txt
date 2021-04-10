@@ -1,0 +1,19 @@
+create an quries for to find the given value occurance of a character
+declare
+s varchar2(10);
+l varchar2(10);
+t varchar2(10);
+i varchar2(10);
+h varchar2(10);
+begin
+s:=&s;
+t:=&t;
+h:=0;
+s:=length(s);
+for i=1 ...l loop
+if str(s,i,1)=t then
+n:=n+1;
+endif;
+endloop;
+dbms_output.put_line(h);
+end;

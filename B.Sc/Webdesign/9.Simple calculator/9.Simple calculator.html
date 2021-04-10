@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Simple Calculator</title>
+<form>
+<Script  Language="VBScript">
+dim temp,res,flag,tp1
+sub b1_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b1.value
+end sub
+sub b2_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b2.value
+end sub
+sub b3_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b3.value
+end sub
+sub b4_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b4.value
+end sub
+sub b5_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b5.value
+end sub
+sub b6_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b6.value
+end sub
+sub b7_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b7.value
+end sub
+sub b8_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b8.value
+end sub
+sub b9_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b9.value
+end sub
+sub b0_OnClick()
+document.forms(0).textbox1.value=document.forms(0).textbox1.value+document.forms(0).b0.value
+end sub
+sub badd_OnClick()
+temp=document.forms(0).textbox1.value
+document.forms(0).textbox1.value=" "
+flag=1
+end sub
+sub bsub_OnClick()
+temp=document.forms(0).textbox1.value
+document.forms(0).textbox1.value=" "
+flag=2
+end sub
+sub bmul_OnClick()
+temp=document.forms(0).textbox1.value
+document.forms(0).textbox1.value=" "
+flag=3
+end sub
+sub bdiv_OnClick()
+temp=document.forms(0).textbox1.value
+document.forms(0).textbox1.value=" "
+flag=4
+end sub
+sub beql_OnClick()
+tp1=document.forms(0).textbox1.value
+if(flag=1)then
+res=cdbl(temp)+cdbl(tp1)
+end if
+if(flag=2)then
+res=temp-tp1
+end if
+if(flag=3)then
+res=temp*tp1
+end if
+if(flag=4)then
+res=temp/tp1
+end if
+document.forms(0).textbox1.value=res
+flag=0
+end sub
+sub bc_OnClick()
+document.forms(0).textbox1.value=" "
+flag=0
+end sub
+</script>
+<center><b><Font color=red size=4>Simple Calculator</b></font>
+<table  border=2 cellpadding=2 bgcolor="lightblue">
+<th>
+<input type="Text" name="textbox1" size=30 font color="Blue" textbox1.align="right"><br>
+<input type="button" name="b7" value="7" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="b8" value="8" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="b9" value="9" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="bdiv" value=" /" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;<br>
+<input type="button" name="b4" value="4" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="b5" value="5" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="b6" value="6" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="bmul" value="*" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;<br>
+<input type="button" name="b1" value="1" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="b2" value="2" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="b3" value="3" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="bsub" value="-" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;<br>
+<input type="button" name="b0" value="0" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="beql" value="=" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="bc" value="C" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;
+<input type="button" name="badd" value="+" style="WIDTH: 46px; HEIGHT: 23px">&nbsp;<br>
+</th>
+</table>
+</center>
+</form>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>String comparsion</title>
+<Script Language="VBScript">
+sub compareString_OnClick()
+dim userString1
+dim userString2
+dim result
+userString1=InputString1.Value
+userString2=InputString2.Value
+result=StrComp(userString1,userString2)
+select case result
+case -1
+msgbox"The first string is smaller than the second string"
+case 0
+msgbox"The strings are same"
+case 1
+msgbox"the first string is larger than the second string"
+case NULL
+msgbox"One of the string is null value"
+end select
+end sub
+</Script>
+</Head>
+<body>
+Type a string:<input name=InputString1 size=20><br>
+Type a 2nd string:<input name=InputString2 size=20><br>
+<input type=button value="CompareString" name="CompareString">
+</body>
+</html>
+

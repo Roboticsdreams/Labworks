@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>TAJMAHAL</title>
+<Script Language="JavaScript">
+function OnTick1()
+{
+setTimeout("OnTick2()","1000");
+p51.style.visibility="visible";
+p54.style.visibility="hidden";
+
+}
+function OnTick2()
+{
+setTimeout("OnTick3()","1000");
+p52.style.visibility="visible";
+p51.style.visibility="hidden";
+}
+function OnTick3()
+{
+setTimeout("OnTick4()","1000");
+p53.style.visibility="visible";
+p52.style.visibility="hidden";
+}
+function OnTick4()
+{
+setTimeout("OnTick1()","1000");
+p54.style.visibility="visible";
+p53.style.visibility="hidden";
+}
+function init()
+{
+setTimeout("OnTick1()","1");
+}
+</Script>
+</head>
+<body OnLoad="init()" bgcolor="black" link="#FF0000" vlink="#FF0000">
+<font color="red"><center><h2>TAJMAHAL</h2></center>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;"><img id=p51 src="TAJMAHAL-1.jpg" width=600pt height=300pt></div>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;" ><img id=p52 src="TAJMAHAL-2.bmp" width=600pt height=300pt></div>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;" ><img id=p53 src="TAJMAHAL-3.jpg" width=600pt height=300pt></div>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;" ><img id=p54 src="TAJMAHAL-4.jpg" width=600pt height=300pt></div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<p align="right"><a href="C:\Documents and Settings\P.Rathinam\Desktop\Websites\Wonders\disp.html" target="company">Back</a></p>
+</body>
+</html>

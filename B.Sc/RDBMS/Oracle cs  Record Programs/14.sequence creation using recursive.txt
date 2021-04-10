@@ -1,0 +1,23 @@
+write an queries to sequence creation using recursive function
+create table cur(cno number(5));
+create sequence series increment by 1 start with 1 maxval 200 minval 1;
+create or replace function seq(n number) return number is c number;
+begin
+if(n<=0)then 
+return(1);
+else
+insert into cur values(series nextval);
+c:=seq(n-1);
+endif;
+return(c);
+end;
+
+declare
+n number(10);
+d number(10);
+begin
+delete from cur;
+n:=&n;
+d:=seq(n);
+end;
+select * from cur;

@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<SCRIPT language="JavaScript">
+
+function OnTick()
+{
+var s=new Date();
+var hour=s.getHours();
+if(hour>=12)
+status="PM";
+else
+status="AM";
+if(hour>12)
+hour=hour-12;
+var msgs="The current time is"
+var time=hour+":"+s.getMinutes()+":"+s.getSeconds()+""+status;
+setTimeout("OnTick()","1000");
+document.all.spot.innerText=msgs+"  "+time;
+}
+function init()
+{
+setTimeout("OnTick()","1");
+}
+</SCRIPT>
+
+</HEAD>
+<BODY onload=init() bgcolor=gray><FONT color=white>
+<H1 id=spot></H1></FONT></BODY></HTML>

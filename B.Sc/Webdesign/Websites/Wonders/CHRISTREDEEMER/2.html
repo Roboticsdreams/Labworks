@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>CHRISTREDEEMER</title>
+<Script Language="JavaScript">
+function OnTick1()
+{
+setTimeout("OnTick2()","1000");
+p1.style.visibility="visible";
+p4.style.visibility="hidden";
+
+}
+function OnTick2()
+{
+setTimeout("OnTick3()","1000");
+p2.style.visibility="visible";
+p1.style.visibility="hidden";
+}
+function OnTick3()
+{
+setTimeout("OnTick4()","1000");
+p3.style.visibility="visible";
+p2.style.visibility="hidden";
+}
+function OnTick4()
+{
+setTimeout("OnTick1()","1000");
+p4.style.visibility="visible";
+p3.style.visibility="hidden";
+}
+function init()
+{
+setTimeout("OnTick1()","1");
+}
+</Script>
+</head>
+<body OnLoad="init()" bgcolor="black" link="#FF0000" vlink="#FF0000">
+<font color="red"><center><h2>CHRISTREDEEMER</h2></center>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;"><img id=p1 src="CHRISTREDEEMER-1.jpg" width=600pt height=300pt></div>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;" ><img id=p2 src="CHRISTREDEEMER-2.jpg" width=600pt height=300pt></div>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;" ><img id=p3 src="CHRISTREDEEMER-3.jpg" width=600pt height=300pt></div>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;" ><img id=p4 src="CHRISTREDEEMER-4.jpg" width=600pt height=300pt></div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<p align="right"><a href="C:\Documents and Settings\P.Rathinam\Desktop\Websites\Wonders\disp.html" target="company">Back</a></p>
+</body>
+</html>

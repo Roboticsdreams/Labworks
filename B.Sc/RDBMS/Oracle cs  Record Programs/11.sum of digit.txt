@@ -1,0 +1,14 @@
+write an queries to find the sum of digits values
+declare
+n number(5);
+s number(5):=0;
+i number(3);
+begin
+n:=&n;
+while (n>0)loop
+i:=mod(n,10);
+s:=s+i;
+n:=turn(n/10);
+endloop;
+dbms_output.put_line('Sum of digits:'||s);
+end;

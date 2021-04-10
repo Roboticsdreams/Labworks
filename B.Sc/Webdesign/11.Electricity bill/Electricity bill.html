@@ -1,0 +1,69 @@
+<html>
+<head>Electricity Bill</head>
+<body>
+<center><h1><u>Tamilnadu Electricity Bill</u></h1><center>
+<form method="post" action="Electricity.html">
+<center>Gobi Electricity Distribution Circle<br>
+Sno:<input type="text" name="text1" size=3><br>
+Billmonth:<input type="text" name="text2"><br>
+Date:<input type="text" name="text3">&nbsp;
+Scno:<input type="text" name="text4"><br>
+Name:<input type="text" name="text5">&nbsp;
+Unit:<input type="text" name="text6"><br><br>
+
+<table border=1 cellspacing=1 cellpadding=1>
+<tr>
+<td colspan=40>Energy<br>Charges</td>
+<td colspan=40><input type="text" name="text7"></td>
+<td colspan=40>Less govt<br>subsidy</td>
+<td colspan=40><input type="text" name="text8"></td>
+</tr>
+<tr>
+<td colspan=40>E-Tax(ADD)</td>
+<td colspan=40><input type="text" name="text9"></td>
+<td colspan=40>Amount</td>
+<td colspan=40><input type="text" name="text10"></td>
+</tr>
+</table>
+<br>
+<br>
+Received Sum of rupees:<u>&nbsp;&nbsp;</u>
+Only by cash<br>(Cheque subjected to realization)<br>
+DD/Cheque no/Date:<input type="text" name="text11"><br>
+Bank:<input type="text" name="tetxt12"><br>
+Group Collection:<input type="radio" name="radio1" value="no">
+No&nbsp;<br>Amount:<input type="text" name="tetxt13" size=3><br>
+Group no:<input type="text" name="tetxt14" size=5><br>
+for and on behalf of TNEB Accessor/IA<br>
+<input type="button" value="Calculate" name="b1">&nbsp;
+<input type="button" value="Submit" name="b2">&nbsp;
+<input type="button" value="Reset" name="b3">&nbsp;
+</form>
+<Script Language="VBScript">
+dim unit,res,energy,less,tax
+sub b1_OnClick()
+unit=document.forms(0).text6.value
+energy=document.forms(0).text7.value
+less=document.forms(0).text8.value
+tax=document.forms(0).text9.value
+if(unit<=100)then
+res=unit*0.65
+else if unit>100 then
+res=unit*0.75
+else if unit>200 and unit<600 then
+res=unit*1.75
+else if unit>600 then
+res=unit*2.20
+else
+res=unit*3.05
+end if
+end if
+end if
+end if
+document.forms(0).text10.value=res+energy-less+tax
+end sub
+</Script>
+</body>
+</html>
+
+

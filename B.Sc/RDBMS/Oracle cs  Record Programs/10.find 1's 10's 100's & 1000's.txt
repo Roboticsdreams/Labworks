@@ -1,0 +1,22 @@
+write queries to find the given no ones,tens,hundreds and thousands
+declare
+a number(6);
+b number(6);
+c number(6);
+d number(6);
+e number(6);
+f number(6);
+g number(6);
+begin
+a:=&a;
+b:=mod(a,10);
+c:=turn(a/10);
+d:=mod(c,10);
+e:=turn(c/10);
+f:=mod(e,10);
+g:=turn(e/10);
+dbms_output.put_line('ones:'||b);
+dbms_output.put_line('Twos:'||d);
+dbms_output.put_line('Hundred:'||f);
+dbms_output.put_line('Thousand:'||h);
+end;

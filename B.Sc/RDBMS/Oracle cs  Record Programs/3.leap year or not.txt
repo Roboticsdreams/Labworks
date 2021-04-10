@@ -1,0 +1,17 @@
+create quries for to find the given value of leap year or not
+declare
+a number(10);
+b number(10);
+c number(10);
+y number(10);
+begin
+y:=&y;
+a:=y mod 4;
+b:=y mod 100;
+c:=y mod 400;
+if((a=0)and(b<>0) or(c=0))then
+dbms_output.put_line('This is leap year');
+else
+dbms_output.put_line('This is not leap year');
+endif;
+end;

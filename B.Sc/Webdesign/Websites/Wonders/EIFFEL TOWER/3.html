@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>EIFFEL TOWER</title>
+<Script Language="JavaScript">
+function OnTick1()
+{
+setTimeout("OnTick2()","1000");
+p21.style.visibility="visible";
+p24.style.visibility="hidden";
+
+}
+function OnTick2()
+{
+setTimeout("OnTick3()","1000");
+p22.style.visibility="visible";
+p21.style.visibility="hidden";
+}
+function OnTick3()
+{
+setTimeout("OnTick4()","1000");
+p23.style.visibility="visible";
+p22.style.visibility="hidden";
+}
+function OnTick4()
+{
+setTimeout("OnTick1()","1000");
+p24.style.visibility="visible";
+p23.style.visibility="hidden";
+}
+
+function init()
+{
+setTimeout("OnTick1()","1");
+}
+</Script>
+</head>
+<body OnLoad="init()" bgcolor="black" link="#FF0000" vlink="#FF0000">
+<font color="red"><center><h2>EIFFEL TOWER</h2></center>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;"><img id=p21 src="EIFFEL TOWER-1.jpg" width=600pt height=300pt></div>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;" ><img id=p22 src="EIFFEL TOWER-2.jpg" width=600pt height=300pt></div>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;" ><img id=p23 src="EIFFEL TOWER-3.jpg" width=600pt height=300pt></div>
+<div style="visibility:visible" style="position:absolute;left:50;top:50;" ><img id=p24 src="EIFFEL TOWER-4.jpg" width=600pt height=300pt></div>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<p align="right"><a href="C:\Documents and Settings\P.Rathinam\Desktop\Websites\Wonders\disp.html" target="company">Back</a></p>
+</body>
+</html>

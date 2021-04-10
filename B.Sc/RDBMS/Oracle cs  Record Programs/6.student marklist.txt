@@ -1,0 +1,23 @@
+write an quries for to find the student marklist
+
+create table student(sname varchar2(10),class varchar2(10),m1 number(5),m2 number(5));
+insert into student values ('&sname'.'&class'.&m1,&m2);
+declare
+cursor c is select * from student;
+rec student % rowtype;
+tot number(10);
+avg number(10);
+begin
+open c;
+loop
+fetch c into rec;
+exit when c % not found;
+tot:=rec.m1+rec.m2;
+avg:=tot/2;
+dbms_output.put_line('Gobi Arts');
+dbms_output.put_line('Sname:'||rec.name||'class:'||rec.class);
+dbms_output.put_line('total'||tot);
+dbms_output.put_line('Average:'||avg);
+endloop;
+close c;
+end;

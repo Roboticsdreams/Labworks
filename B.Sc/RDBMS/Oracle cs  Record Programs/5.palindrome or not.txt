@@ -1,0 +1,19 @@
+create quries to find the the given string is palindrome or not
+declare
+s varchar2(10);
+s1 varchar2(10);
+s2 varchar2(10);
+l varchar2(10);
+begin
+s:=&s;
+l:=length(s);
+for i in reverse 1...l loop
+s1:=substr(s,i,1);
+s2:=concat(s2,s1);
+end loop;
+if(s1=s2) then
+dbms_output.put_line("The given string is palindrome");
+else
+dbms_output.put_line("The given string is not a palindrome");
+end if;
+end;

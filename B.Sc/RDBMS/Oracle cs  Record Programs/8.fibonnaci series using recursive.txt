@@ -1,0 +1,22 @@
+write an queries to find the value of fibonnacci series using function
+
+create or replace function fib(n number)return number is f number(5);
+begin
+if ((n=1) or (n=2))then
+return(1);
+else 
+f:=fib(n-1)+fib(n-2);
+endif;
+return(f);
+end;
+
+declare
+n number(5):=&n;
+f number(10);
+begin
+while(i<=n)loop
+f:=fib(i);
+dbms_output.put_line(f);
+i:=i+1;
+endloop;
+end;

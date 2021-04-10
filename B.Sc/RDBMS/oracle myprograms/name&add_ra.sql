@@ -1,0 +1,25 @@
+create table ra(sno number(5),name varchar(15),address varchar(25));
+insert into ra values(1,'P.Bala','Kossanam');
+insert into ra values(2,'P.Gopi','Avanasi');
+insert into ra values(3,'S.Gughanand','Anthiyur');
+insert into ra values(4,'P.Gowtham','Mavani');
+insert into ra values(5,'V.Jayakumar','Pangalapudur');
+insert into ra values(6,'S.Karthick','Kavanthapadi');
+insert into ra values(7,'K.Karthikeyan','Nambiyur');
+insert into ra values(8,'S.Muthukumar','Nambiyur');
+insert into ra values(9,'S.Natesan','Oddathori');
+insert into ra values(10,'P.Poovannan','Talavadi');
+insert into ra values(11,'V.Ramasamy','Kuramanthur');
+insert into ra values(12,'K.Ramkumar','Gobi');
+insert into ra values(13,'P.Rathinavel','Sathy');
+insert into ra values(14,'K.Ravichandar','Nambiyur');
+insert into ra values(15,'P.Satheesh','Kossanam');
+insert into ra values(16,'V.Senthilprabhu','Gobi');
+insert into ra values(17,'K.Sundramoorthy','Nambiyur');
+insert into ra values(18,'A.Suresh','Nambiyur');
+insert into ra values(19,'G.Tamilarasan','Mavani');
+insert into ra values(20,'C.Thirumoorthy','Kadakapalayam');
+insert into ra values(21,'D.Vijayakumar','Nambiyur');
+insert into ra values(22,'P.L.Vijayakumar','Gobi');
+select * from ra;
+

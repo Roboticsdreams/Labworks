@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta name="Generator" Contents="MS Visual Studio 6.0">
+<title>Date & Time</title>
+</head>
+<body >
+<Script Language="JavaScript">
+var status,hour,minute,date,year,month;
+var rightNow=new Date();
+minute=rightNow.getMinutes();
+hour=rightNow.getHours();
+if(hour>=12)
+status="PM";
+else
+status="AM";
+if(hour>12)
+hour=hour-12;
+document.write("<br><br>The Current time is:",hour,":",minute,status);
+month=rightNow.getMonth();
+month=month+1;
+year=rightNow.getYear();
+date=rightNow.getDate();
+document.write("<br><br>The Current Date is:",month,"/",date,"/",year,".");
+</Script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+main()
+{
+int gd=DETECT,gm;
+int i;
+initgraph(&gd,&gm,"");
+for(i=0;i<=200;i++)
+{
+if(i%2==0)
+{
+cleardevice();
+ellipse(180,190,0,360,10,5);
+ellipse(220,190,0,360,10,5);
+}
+else
+{
+delay(10);
+ellipse(180,190,0,360,10,2);
+ellipse(220,190,0,360,10,2);
+}
+circle(200,200,40);
+line(200,190,200,210);
+arc(200,215,190,340,13);
+delay(15000);
+}
+getch();
+}

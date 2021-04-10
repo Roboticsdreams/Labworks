@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>MouseEvent</title>
+<Script Language="JavaScript">
+function computer_OnMouseOver()
+{
+text1.style.visibility="visible";
+computer.style.visibility="visible";
+text2.style.visibility="hidden";
+ballon.style.visibility="hidden";
+}
+function everyone_OnMouseOut()
+{
+text1.style.visibility="visible";
+computer.style.visibility="visible";
+text2.style.visibility="visible";
+ballon.style.visibility="visible";
+}
+function ballon_OnMouseOver()
+{
+text1.style.visibility="visible";
+computer.style.visibility="visible";
+text2.style.visibility="visible";
+ballon.style.visibility="visible";
+}
+</Script>
+</head>
+<body>
+<Div style="visibility:visible"
+OnMouseOver="computer_OnMouseOver();"
+OnMouseOut="everyone_OnMouseOut();">
+<center>
+<font id=text1 color="Blue" face="Arial">Original Font</font>
+<p>
+<img id="computer" src="picture.jpg" height=200 width=200></center></Div>
+<div style="visibility.visible" OnMouseOver="computer_OnMouseOver();" 
+OnMouseOut="everyone_OnMouseOut();">
+<center>
+<font id=text2 color="red" face="Arialblack">mouse</font>
+<p>
+<img id="ballon" src="picture.jpg " height=200 width=200>
+</center>
+</body>
+</html>

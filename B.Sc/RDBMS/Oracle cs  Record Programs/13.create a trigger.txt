@@ -1,0 +1,20 @@
+write an queries to create a trigger
+create or replace trigger auditing before update or delete on client tab for each
+
+declare
+oper varchar2(6);
+clientno varchar2(6);
+name varchar2(6);
+bal_due varchar2(6);
+begin
+if updating then
+oper:='Update';
+end if;
+if deleting then
+oper:='Delete';
+end if;
+clientno:=old.clientno;
+name:=old.name;
+bal_due:=old.bal_due;
+insert into audit client values(name,clientno,bal_due,oper,sysdate);
+end;

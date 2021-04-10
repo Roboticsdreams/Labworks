@@ -1,0 +1,34 @@
+<html>
+<head>
+<Script Language="JavaScript">
+var i=0;
+var msgs;
+function OnTick()
+{
+setTimeout("OnTick()","2500");
+document.all.spot.innerText=msgs[i];
+i++;
+if(i==6)
+i=0;
+}
+function init()
+{
+msgs=new Array();
+msgs[0]="Every day";
+msgs[1]="We do";
+msgs[2]="our part";
+msgs[3]="to make your face";
+msgs[4]="a work of Art";
+msgs[5]="Burn a share";
+setTimeout("OnTick()","1");
+}
+</Script>
+</Head>
+<body OnLoad="init()"><font color="red">
+<center>
+<h1 id=spot>
+</h1>
+</font>
+</center>
+</body>
+</html>

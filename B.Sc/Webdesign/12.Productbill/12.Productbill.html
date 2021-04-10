@@ -1,0 +1,86 @@
+<html>
+<head>
+<Script Language="VBScript">
+document.write("P1-->Soap")
+document.write("<br>")
+document.write("P2-->Powder")
+document.write("<br>")
+document.write("P3-->Horlicks")
+document.write("<br>")
+document.write("P4-->Boost")
+document.write("<br>")
+document.write("P5-->3 Roses")
+document.write("<br>")
+dim prd(20),p(20),q(20),pno(20)
+dim i,n,count,a,b,c,d,e
+dim amt
+i=0
+n=0
+while n<>"end"
+n=Inputbox("Enter the product code for above :")
+if n="p1"then
+pno(i)="p1"
+prd(i)="Soap"
+p(i)="20"
+q(i)=Inputbox("Enter the number of soap")
+a=p(i)*q(i)
+i=i+1
+end if
+
+if n="p2"then
+pno(i)="p2"
+prd(i)="Power"
+p(i)="50"
+q(i)=Inputbox("Enter the number of Power")
+b=p(i)*q(i)
+i=i+1
+end if
+
+if n="p3"then
+pno(i)="p3"
+prd(i)="Horlicks"
+p(i)="100"
+q(i)=Inputbox("Enter the number of Horlicks")
+c=p(i)*q(i)
+i=i+1
+end if
+
+if n="p4"then
+pno(i)="p4"
+prd(i)="Boost"
+p(i)="120"
+q(i)=Inputbox("Enter the number of Boost")
+d=p(i)*q(i)
+i=i+1
+end if
+
+if n="p5"then
+pno(i)="p5"
+prd(i)="3 Roses"
+p(i)="150"
+q(i)=Inputbox("Enter the number of 3 Roses")
+e=p(i)*q(i)
+i=i+1
+end if
+
+wend
+count=i
+
+document.write("<center>"+"<b>"+ProductList+"</b>"+"</center>")
+
+document.write("<br>"+"Product code"+"&nbsp;&nbsp;"+"Product name"+"&nbsp;&nbsp;"+"Quatity"+"&nbsp;&nbsp;"+"Price:"+"<br>")
+for i=0 to count
+document.write(pno(i)+"&nbsp;&nbsp;"+prd(i)+"&nbsp;&nbsp;"+q(i)+"&nbsp;&nbsp;"+p(i)+"&nbsp;&nbsp;"+"<br>")
+next 
+amt=a+b+c+d+e
+document.write("Total Amount=")
+document.write(amt)
+</Script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+

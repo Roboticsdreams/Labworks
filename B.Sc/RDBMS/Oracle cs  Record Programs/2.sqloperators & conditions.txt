@@ -1,0 +1,28 @@
+create a quries for sql operators and conditions
+create table emp(no number(10),ename varchar2(10),basicpay number(10),grosspay number(10),netpay number(10));
+insert into emp values(&no,'&ename',&basicpay,&grosspay,&netpay);
+select * from emp;
+create table empl(no number(10),ename varchar2(10),address varchar2(10),city varchar2(10));
+insert into empl values(&no,'&ename','&address','&city');
+
+comparision operation
+select * from emp where netpay<4800;
+select * from emp where netpay>4800;
+select * from emp where netpay>=4800;
+
+logical operation
+select * from emp where netpay>10000 and netpay<20000;
+
+set operation
+(select empname from emp)union(select address from empe);
+(select empname from emp)unionall(select address from empe);
+
+sorting operator
+select empno from emp order by empname asc;
+select empno from emp order by empname desc;
+
+count operator
+select count(*) from emp;
+select count(*) from emp group by city;
+
+

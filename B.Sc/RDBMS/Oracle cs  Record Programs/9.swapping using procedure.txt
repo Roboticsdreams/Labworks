@@ -1,0 +1,18 @@
+write queries to  find the swap value using procedure
+create or replace procedure swap(a in out number, b in out number) as t number'
+begin
+t:=a;
+a:=b;
+b:=t;
+end;
+
+declare
+x number(5);
+y number(5);
+begin
+x:=&x;
+y:=&y;
+swap(x,y);
+dbms_output.put_line(x);
+dbms_output.put_line(y);
+end;

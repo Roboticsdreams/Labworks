@@ -1,0 +1,49 @@
+declare
+num number(5);
+uni number(4);
+amt number(8);
+yea number(4);
+add varchar(10);
+name varchar(10);
+bno number(5);
+l number(6);
+s number(3);
+mon varchar(5);
+begin
+bno:=l;
+select count(*)into 1 from bil;
+bno:=l+1;
+num:=&number;
+uni:=&unit;
+name:='&name';
+mon:=&month;
+addr:='&address';
+select count(*)into s from bil where
+custid=num
+if s=1 then
+dbms_output.put_line('Bill already paid');
+else
+if(uni<=500)then amt+(0.50*uni);
+else if((uni>500)and(uni<=1000))then
+amt:=((0.50*500)+(uni-500)*1.5);
+else if((uni>1000)and(uni<=1500)then
+amt:=((500*0.50)+(1.5*500)+(uni-1000)*2);
+else if(uni>1500)then
+amt:=((500*0.50)+(1.5*500)+(500*2)+(uni+500)*5);
+end if;
+end if;
+end if;
+end if;
+dbms_output.put_line('ELECTRICITY BILL');
+dbms_output.put_line('Bill number:='||bno);
+dbms_output.put_line('Customer id:='||num);
+dbms_output.put_line('Customer address:='||addr);
+dbms_output.put_line('year:=='||yea);
+dbms_output.put_line('month:='||mon);
+dbms_output.put_line('units:='||uni);
+dbms_output.put_line('customer name:='||name);
+dbms_output.put_line('Total amount:='||amt);
+end if;
+end;
+select * from bil;
+/

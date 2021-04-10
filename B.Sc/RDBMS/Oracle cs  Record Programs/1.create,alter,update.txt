@@ -1,0 +1,7 @@
+write a program to create a table and alter,insert,update a table
+create table customer((cno number(10),cname varchar2(10),address varchar2(10));
+insert into customer values(&no,'&name','&address');
+select * from customer;
+alter table customer add(phoneno number(10));
+update customer set phoneno=251368 where cnmae='Rathinam';
+select * from customer;

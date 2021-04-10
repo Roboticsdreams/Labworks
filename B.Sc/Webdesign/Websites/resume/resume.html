@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>Resume</title>
+<Script Language="JavaScript">
+function OnTick()
+{
+var s=new Date();
+var hour=s.getHours();
+if(hour>=12)
+sta="PM";
+else
+sta="AM";
+if(hour>12)
+hour=hour-12;
+sec=s.getSeconds();
+if(sec<10)
+sec="0"+sec
+min=s.getMinutes();
+if(min<10)
+min="0"+min
+var msgs="Time:"
+var time=hour+":"+min+":"+sec+" "+sta;
+setTimeout("OnTick()","1000");
+document.all.spot.innerText=msgs+"  "+time;
+}
+function init()
+{
+setTimeout("OnTick()","1");
+setTimeout("OnDisp()","1");
+setTimeout("OnTick11()","1");
+}
+function OnDisp()
+{
+var rightNow=new Date();
+month=rightNow.getMonth();
+month=month+1;
+year=rightNow.getYear();
+year= 1900+year;
+date=rightNow.getDate();
+dt=date+"/"+month+"/"+year;
+document.all.spott.innerText="Date:"+dt;
+
+var dob = new Date("01/18/1990");  
+var month_diff = Date.now() - dob.getTime();  
+var age_dt = new Date(month_diff);   
+var year = age_dt.getUTCFullYear();  
+var age = Math.abs(year - 1970);
+document.all.age.innerText="Age :"+ age;
+}
+
+
+
+  message = "Welcome to Rathinavel's website^" +
+  			"Welcome to roboticsdreams.com^" +
+  			"World Largest Technical & Technology website^" +
+			"Website Maintained By Rathinavel - WebDesigner^" +
+			"Any related details please contact:- p.rathinavel@gmail.com^" 
+            
+
+  scrollSpeed = 45
+
+  lineDelay   = 1500
+
+  txt         = ""
+
+  function scrollText(pos) {
+
+    if (message.charAt(pos) != '^') {
+
+     txt    = txt + message.charAt(pos)
+
+     status = txt
+
+     pauze  = scrollSpeed
+
+    }
+
+    else {
+
+      pauze = lineDelay
+
+      txt   = ""
+
+      if (pos == message.length-1) pos = -1
+
+    }
+
+    pos++
+
+    setTimeout("scrollText('"+pos+"')",pauze)
+
+  }
+
+scrollText(0)
+
+function OnTick11()
+{
+setTimeout("OnTick21()","7000");
+myspan1.filters.blendTrans.Apply();
+myspan1.innerText="P.Rathinavel";
+myspan1.filters.blendTrans.Play();
+}
+function OnTick21()
+{
+setTimeout("OnTick11()","7000");
+myspan1.filters.blendTrans.Apply();
+myspan1.innerText="Webdesigner";
+myspan1.filters.blendTrans.Play();
+}
+
+
+</Script>
+</head>
+<body bgcolor="white" onload=init()>
+<table border=0 cellpadding=1 cellspacing=3 width=100%>
+
+<tr>
+<td width=758 height="24"><font  id=spot size="4" color="#800000" face="Palatino Linotype"></td>
+<td width=53 height="24"><p><a href="https://github.com/Roboticsdreams">Home</a></p></td>
+<td width=47 height="24"><p><a href="mailto:p.rathinavel@gmail.com">About</a></p></td>
+<td width=49 height="24"><p><a href="mailto:p.rathinavel@gmail.com">Posts</a></p></td>
+<td width=72 height="24"><p><a href="mailto:p.rathinavel@gmail.com">Comments</a></p></td>
+<td width=64 height="24"><p><a href="mailto:p.rathinavel@gmail.com">Contacts</a></p></td>
+</tr>
+
+<tr> 
+<td width=1068 colspan=6 background="header.jpg" height="12">
+<p><font color="#0B636B"><h1 align="right"><i><font size="9"><span id="myspan1" style="position:absolute;left:650;top:190;color=green;filter=blendTrans(duration=5)" ></span><img border="0" src="junoon.gif" width="88" height="150"></font></i></h1><h1 align="right"></font><b>
+<font size="5">
+<font  color=#FFFFFF face="Papyrus">Think different</font><font  color=#666666 face="Papyrus"> </font>
+<font  color=gray><font face="Papyrus">&nbsp; </font>
+<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i> </font></font></h1></p>
+</tr>
+
+<tr>
+<td width="758" height="207"><h3><font face="Palatino Linotype" size="5" color="#800000">P.RATHINAVEL</font></h3>
+
+<p><font face="Verdana" size="2">S/O K.PALANISAMY,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;E-MAIL:<a href="mailto:p.rathinavel@gmail.com">p.rathinavel@gmail.com</a></font></p>
+
+<p><font face="Verdana" size="2">176,MARRIAMMAN KOVIL STREET,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;MOBILE:08870072775</font></p>
+<p><font face="Verdana" size="2">ARIYAPPAMPALAYAM (PO),</font></p>
+<p><font face="Verdana" size="2">SATHYAMANGALAM-638402.</font></p>
+<p><font face="Verdana" size="2">ERODE-DT, TAMILNADU</font></p>
+
+<p><font face="Palatino Linotype" size="4" color="#800000">ACADEMICAL DETAILS:</font></p>
+
+<table border="0" cellspacing="2" cellpadding="1" style="border-collapse: collapse" bordercolor="#111111" width="100%" height="249">
+  <tr bgcolor="#ccccff">
+    <td width="20%" height="38" align="center" bgcolor="#CAD7F0"><b>
+    <font face="Palatino Linotype" size="2">COURSE</font></b></td>
+    <td width="20%" height="38" align="center" bgcolor="#CAD7F0"><b>
+    <font face="Palatino Linotype" size="2">INSTITUTION</font></b></td>
+    <td width="20%" height="38" align="center" bgcolor="#CAD7F0"><b>
+    <font face="Palatino Linotype" size="2">UNIVERSITY/BOARD</font></b></td>
+    <td width="20%" height="38" align="center" bgcolor="#CAD7F0"><b>
+    <font face="Palatino Linotype" size="2">PERCENTAGE/GRADE</font></b></td>
+    <td width="20%" height="38" align="center" bgcolor="#CAD7F0"><b>
+    <font face="Palatino Linotype" size="2">YEAR OF COMPLETION</font></b></td>
+  </tr>
+  <tr bgcolor="#e6e6e6">
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">B.Sc(I.T)</font></td>
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">Gobi Arts &amp;Science College,Gobichettipalayam</font></td>
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">Bharathiyar University</font></td>
+    <td width="20%" height="38" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">82%</font></td>
+    <td width="20%" height="38" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">2010</font></td>
+  </tr>
+  <tr bgcolor="#e6e6e6">
+    <td width="20%" height="36" bgcolor="#F2F2F2"><font face="Verdana" size="2">.NET</font></td>
+    <td width="20%" height="36" bgcolor="#F2F2F2"><font face="Verdana" size="2">CSC Computer Education,Sathyamangalam</font></td>
+    <td width="20%" height="36" bgcolor="#F2F2F2">&nbsp;</td>
+    <td width="20%" height="36" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">A</font></td>
+    <td width="20%" height="36" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">2009</font></td>
+  </tr>
+  <tr bgcolor="#e6e6e6">
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">HDCA</font></td>
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">CSC Computer Education,Sathyamangalam</font></td>
+    <td width="20%" height="38" bgcolor="#F2F2F2">&nbsp;</td>
+    <td width="20%" height="38" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">A</font></td>
+    <td width="20%" height="38" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">2008</font></td>
+  </tr>
+  <tr bgcolor="#e6e6e6">
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">H.S.C</font></td>
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">Sri Ragavendra Hr.Sec.School,Sathyamangalam</font></td>
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">Stateboard</font></td>
+    <td width="20%" height="38" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">74%</font></td>
+    <td width="20%" height="38" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">2007</font></td>
+  </tr>
+ <tr bgcolor="#e6e6e6">
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">S.S.L.C</font></td>
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">Sri Ragavendra Hr.Sec.School,Sathyamangalam</font></td>
+    <td width="20%" height="38" bgcolor="#F2F2F2"><font face="Verdana" size="2">Stateboard</font></td>
+    <td width="20%" height="38" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">79%</font></td>
+    <td width="20%" height="38" align="center" bgcolor="#F2F2F2"><font face="Verdana" size="2">2005</font></td>
+  </tr>
+</table>
+
+<p><font face="Palatino Linotype" size="4" color="#800000">AREA OF INTEREST:</font></p>
+<ul>
+  <li><font face="Verdana" size="2">Multimedia</font></li>
+  <li><font face="Verdana" size="2">Web Designing</font></li>
+  <li><font face="Verdana" size="2">VB Programming</font></li>
+  <li><font face="Verdana" size="2">Project Designing</font></li>
+  <li><font face="Verdana" size="2">Scripting Languages</font></li>
+  <li><font face="Verdana" size="2">Small Software Designing & Creations</font></li>
+</ul>
+
+
+
+<p><font face="Palatino Linotype" size="4" color="#800000">TECHNICAL EXPOSURES:</font></p>
+<font face="Verdana" size="2"><ul>
+<li>Operating Systems&nbsp;&nbsp;&nbsp; : Windows 2000/XP/Vista</li>
+<li>Multimedia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Photoshop, CorelDraw, Flash</li>
+<li>Languages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : C, C++, Java, C#, VB, VB.Net</li>
+<li>Scripting Lanuages&nbsp;&nbsp;&nbsp; : VB Script, JavaScript, ASP, ASP.Net</li>
+<li>Database Languages&nbsp; : MS Access, SQL Server, oracle 9i</li>
+<li>Other Packages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : MS-Office, Star-Office</li></ul></font>
+<font face="Palatino Linotype" size="4" color="#800000">
+<p>EXTRA CO-CIRCULLAR ACTIVITIES:</p>
+</font>
+<font face="Verdana" size="2">
+<ul>
+  <li>As a candidate of SSL ( Social Service League )</li>
+  <li>Hardware maintaince &amp; trouble shooting<br>
+&nbsp;</li>
+</ul>
+</font></p>
+</td>
+
+
+<td colspan=5 height="207" width="305">
+<font size="4" face="Palatino Linotype" color="#800000">PERSONAL DETAILS</font><p>
+<font face="Palatino Linotype" size="4" color="#800000">
+<img border="0" src="rathinam-small.jpg" width="100" height="123"></font></p>
+<p><font size="2" face="Verdana">Name: P.Rathinavel.</font></p>
+<p><font size="2" face="Verdana">Date of Birth: 18<sup>th</sup> Jan 1990</font></p>
+<p><font id=age size="2" face="Verdana"></font></p>
+<p><font size="2" face="Verdana">Sex : Male</font></p>
+<p><font size="2" face="Verdana">Maritual Status:Single</font></p>
+<p><font size="2" face="Verdana">Language Known:English &amp; Tamil</font></p>
+<p><font size="2" face="Verdana">Father's Name: Mr.K.Palanisamy</font></p>
+<p><font size="2" face="Verdana">Mother's Name: Mrs.P.Devipadma<br>
+<br>Permanent Address: </font></p>
+<p><font size="2" face="Verdana">176,MARRIAMMANKOVILSTREET,<br><br>ARIYAPPAMPALAYAM (PO), <br><br>SATHYAMANGALAM,<br><br>ERODE (DT)-638 402.</font><p>
+<font face="Verdana" size="2">Contact:08870072775</font>
+<p><img border="0" src="junoon.gif" width="139" height="265"><p>
+<tr>
+<td width=100% colspan=6>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font  id=spott size="4" color="#800000" face="Palatino Linotype">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>
+
+  <p align="right">Authentically,&nbsp; <br>
+
+<font size="4" color="#800000" face="Palatino Linotype">Place :</font><font size="4" face="Palatino Linotype"> Gobichettipalayam.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;
+ 
+<font color="#0000FF">&nbsp; </font></font>
+<font face="Viner Hand ITC" color="#0000FF">P.Rathinavel</font>. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(P.Rathinavel)<br>
+<p align="center">© Copyright <a href="https://github.com/Roboticsdreams" style="color: blue; text-decoration: underline; text-underline: single">
+P.Rathinavel</a> All Rights Reserved.</p>
+&nbsp;</td>
+&nbsp;</td>
+</table>
+</body>
+</html>

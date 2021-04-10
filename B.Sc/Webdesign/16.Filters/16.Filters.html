@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Filters</title>
+<Script Language="JavaScript">
+function addglow()
+{
+myspan.style.filter="glow(red)";
+}
+
+function doTrans1()
+{
+myspan1.filters.blendTrans.Apply();
+myspan1.innerText="Filters are easy";
+myspan1.filters.blendTrans.Play();
+}
+
+function doTrans2()
+{
+myspan2.filters.revealTrans.Apply();
+myspan2.innerText="Reveal";
+myspan2.filters.revealTrans.Play();
+} 
+</Script>
+</head>
+<body>
+<span id="myspan" height=20 width=20 style="position:absolute;left:0;
+font-size=20;top=0;color=blue"OnMouseover="addglow()">
+Using filters are easy</span>
+
+<span id="myspan1" height=20 width=50 style="position:absolute;left=100;
+font-size=24;top=60;color=aqua;filter:blendTrans(duration=3)" OnClick="doTrans1()">
+Click Here!</span>
+
+<span id="myspan2" height=30 width=30 style="position:absolute;left=130;
+font-size=30;top=80;color=red;filter:revealTrans(duration=3)" OnClick="doTrans2()">
+Click Here!</span>
+
+</body>
+</html>

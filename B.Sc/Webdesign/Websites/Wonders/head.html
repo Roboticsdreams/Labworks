@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Frames</title>
+<Script Language="JavaScript">
+function OnTick()
+{
+setTimeout("OnTick1()","7000");
+myspan1.filters.blendTrans.Apply();
+myspan1.innerText="The   New    7     Wonders";
+myspan1.filters.blendTrans.Play();
+}
+function OnTick1()
+{
+setTimeout("OnTick()","7000");
+myspan1.filters.blendTrans.Apply();
+myspan1.innerText="The New Seven Wonders";
+myspan1.filters.blendTrans.Play();
+}
+function init()
+{
+setTimeout("OnTick()","1");
+}
+</Script>
+</head>
+<body OnLoad="init()" bgcolor=black>
+<embed src="C:\Documents and Settings\P.Rathinam\Desktop\Websites\Wonders\music.wav" width=0 height=0 volume=up autostart=true loop=true>
+<p align="center"><font face="Poor Richard" size="7"><b>
+<span id="myspan1" style="position:absolute;left:200;top:50;color=red;filter=blendTrans(duration=5)" >The New Seven Wonders</span>
+</b></font></p>
+</body>
+</html>

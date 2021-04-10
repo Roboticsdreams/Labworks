@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Listing D.S the TestRangeObject</title>
+<Script Language="JavaScript">
+var theRange;
+var findText,sStr;
+function SetRange()
+{
+theRange=document.body.createTextRange();
+theRange.moveToElementText(theText);
+}
+function find(s)
+{
+if(theRange.findText(s))
+{
+findText="<FONT STYLE="+"color:red;Background:Black"+">"+theRange.text+"</font>";
+theRange.pasteHTML(findText);
+}
+}
+function doSearch()
+{
+sStr=prompt("Enter the String for search:");
+find(sStr);
+}
+</Script>
+</head>
+<Body OnLoad="SetRange()">
+<h2>The Text Range Object</h2>
+<div id=theText>Create a text range object by calling the create Text Range() method 
+of body,button,textarea,and text input elements.Using create textRange() with the body 
+element returns a reference to the entire document</div>
+<input type=Button value="search" OnClick="doSearch()">
+</Body>
+</html>

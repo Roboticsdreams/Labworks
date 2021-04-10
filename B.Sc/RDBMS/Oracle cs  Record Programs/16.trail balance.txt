@@ -1,0 +1,102 @@
+prepare the trail  balance for the following transactions and show profit & loss a/c and balance sheet.Gernalise the following transaction.
+
+Account information			Groups
+capital a/c				capital a/c
+bank a/c				bank a/c
+furniture a/c			fixed assets a/c
+purchase a/c			purchase a/c
+x a/c				sundry creditors
+anand & sons a/c			sundry creditors
+mahendra a/c			sundry creditors
+telephone rent a/c			Expenses(indirect)
+advertisement a/c 			Expenses(indirect)
+salary a/c				Expenses(indirect)
+rent a/c				Expenses(indirect)
+van a/c				sundry creditors
+delkey motors & co			captial
+drawings				fixed assests
+sales a/c				sales a/c
+
+step1:-
+f1->company info->create company select->company.
+gateway of tally->accounts information->ledger a/c->create.
+gateway of tally->vouchar entry voucher type:receipt
+
+key:f6
+cash a/c dr 10000
+To captial a/c 10000
+voucher type:contra
+
+key:f4
+bank a/c dr 5000
+To cash a/c  5000
+voucher type:payment
+
+key:f5
+furniture a/c dr 500
+To cash a/c 500
+voucher type:payment
+
+key:f5
+purchase a/c dr 300
+To cash a/c 300
+voucher type:recepit
+
+key:f6
+cash a/c dr 600
+To sales a/c 600
+voucher type:journal
+
+key:f4
+type writter dr 500
+To remaining to a/c 500
+voucher type:sales
+
+key:f8
+anand & sons a/c dr 1000
+To sales a/c 1000
+voucher type:purchase
+
+key:f9
+purchase a/c dr 2000
+To mahindra a/c 2000
+voucher type:payment
+
+key:f5
+telephone rent a/c dr 240
+To cash a/c 240
+voucher type;payment
+
+key:f5
+advertisement a/c dr 100
+To cash a/c 100
+voucher type:recepit
+
+key:f6
+cash a/c dr 800
+To sales a/c 800
+voucher type:payment
+
+key:f5
+salary a/c dr 200
+To cash a/c 200
+voucher type:payment
+
+key:f5
+rent a/c dr 100
+To cash a/c 100
+voucher type:payment
+
+key:f5
+dawing a/c dr 300
+To bank a/c 300
+voucher type:journal
+
+key:f7
+van a/c dr 10000
+To delhimotor a/c 10000
+voucher type:payment
+
+key:f5
+delhimotor a/c dr  500
+To bank a/c     500
